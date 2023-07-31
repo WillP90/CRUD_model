@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>{{user.first_name}} ID: {{user.id}} </h2>
+        <p>First Name {{user.first_name}}</p>
+        <p>Last Name {{user.last_name}}</p>
+        <p>Full Name {{user.full_name()}}</p>
+        <p>Email: {{user.email}}</p>
+
+        <p>Created ON: {{user.created_at}}</p>
+        <p>Last Updated: {{  user.updated_at}}</p>
+    <p><a href="/user/edit/{{user.id}}">Edit</a> | <a href="/user/delete/{{user.id}}">Delete</a> | <a href="/">Home</a></p>
+</body>
+</html>
